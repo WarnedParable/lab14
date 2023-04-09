@@ -1,0 +1,3 @@
+C:/Users/karob/Desktop/projects/ychebka/1kurs/op/14labh/cmake-build-debug/CMakeFiles/14labh.dir
+C:/Users/karob/Desktop/projects/ychebka/1kurs/op/14labh/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/karob/Desktop/projects/ychebka/1kurs/op/14labh/cmake-build-debug/CMakeFiles/rebuild_cache.dir
