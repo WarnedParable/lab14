@@ -45,4 +45,3 @@ void shrink_to_fit(vector *v) {
 void delete_vector(vector *v) {
     free(v->data);
 }
-
