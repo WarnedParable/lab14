@@ -55,10 +55,56 @@ void test_pop_back__not_empty_vector() {
     check(are_arrays_equal(v.data, v.size, target, 0), __func__);
 }
 
+void test_at_vector_not_empty_vector() {
+    vector v = create_vector(4);
+    push_back(&v, 1);
+    push_back(&v, 2);
+    push_back(&v, 3);
+    push_back(&v, 4);
+
+    int *i = at_vector(&v, 2);
+
+    check(*i == 3, __func__);
+}
+
+void test_at_vector_request_to_last_element() {
+    vector v = create_vector(4);
+    push_back(&v, 1);
+    push_back(&v, 2);
+    push_back(&v, 3);
+    push_back(&v, 4);
+
+    int *i = at_vector(&v, 3);
+
+    check(*i == 4, __func__);
+}
+
+void test_back_one_element_in_vector() {
+    vector v = create_vector(1);
+    push_back(&v, 1);
+
+    int *i = back(&v);
+
+    check(*i == 1, __func__);
+}
+
+void test_front_one_element_in_vector() {
+    vector v = create_vector(1);
+    push_back(&v, 1);
+
+    int *i = front(&v);
+
+    check(*i == 1, __func__);
+}
+
 void test() {
     test_push_back_empty_vector();
     test_push_back_full_vector();
     test_pop_back__not_empty_vector();
+    test_at_vector_not_empty_vector();
+    test_at_vector_request_to_last_element();
+    test_back_one_element_in_vector();
+    test_front_one_element_in_vector();
 }
 
 
